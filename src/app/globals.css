@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+:root {
+  /* Brand palette — matches the Crossway Global reference design exactly */
+  --color-brand: #162b23;
+  --color-brand-dark: #0f1e18;
+  --color-brand-surface: #faf8f4;
+  --color-brand-surface-alt: #f3efe9;
+  --color-brand-gold: #c87d1e;
+  --color-brand-gold-hover: #b06c17;
+  --color-brand-border: #e5e0d8;
+  --color-brand-border-dark: #d4cdc2;
+  --color-brand-text: #1c2420;
+  --color-brand-text-muted: #526058;
+}
+
+@theme inline {
+  --color-brand: var(--color-brand);
+  --color-brand-dark: var(--color-brand-dark);
+  --color-brand-surface: var(--color-brand-surface);
+  --color-brand-surface-alt: var(--color-brand-surface-alt);
+  --color-brand-gold: var(--color-brand-gold);
+  --color-brand-gold-hover: var(--color-brand-gold-hover);
+  --color-brand-border: var(--color-brand-border);
+  --color-brand-border-dark: var(--color-brand-border-dark);
+  --color-brand-text: var(--color-brand-text);
+  --color-brand-text-muted: var(--color-brand-text-muted);
+
+  --font-serif: "Source Serif 4", Georgia, serif;
+  --font-sans: "DM Sans", system-ui, -apple-system, sans-serif;
+
+  --container-site: 1160px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-brand-surface);
+  color: var(--color-brand-text);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+::selection {
+  background: var(--color-brand-gold);
+  color: white;
+}
+
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+details[open] .faq-chevron {
+  transform: rotate(180deg);
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+    "FILL" 0,
+    "wght" 400,
+    "GRAD" 0,
+    "opsz" 24;
+}
