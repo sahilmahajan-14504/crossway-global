@@ -123,18 +123,13 @@ export default function RfqForm() {
             id="product-select"
             name="product-select"
             required
-            defaultValue="turmeric-powder"
+            defaultValue="turmeric"
           >
-            <option value="turmeric-powder">
-              Turmeric Powder (High Curcumin)
-            </option>
-            <option value="turmeric-fingers">
-              Turmeric Whole Fingers (Double Polished)
-            </option>
-            <option value="moringa-powder">Organic Moringa Leaf Powder</option>
-            <option value="both-combined">
-              Combined Shipment (Turmeric &amp; Moringa)
-            </option>
+            <option value="turmeric">Turmeric (Salem / Waigaon)</option>
+            <option value="moringa">Moringa Leaf Powder</option>
+            <option value="ashwagandha">Ashwagandha Root Powder</option>
+            <option value="beetroot">Beetroot Powder</option>
+            <option value="multiple">Multiple Products / Combined Shipment</option>
           </select>
         </div>
         <div>

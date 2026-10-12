@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "Export Documentation Policy",
   description:
     "The shipping, quality, and regulatory documentation Crossway Global issues with every export consignment.",
+  alternates: { canonical: "/documentation-policy" },
 };
 
 export default function DocumentationPolicyPage() {

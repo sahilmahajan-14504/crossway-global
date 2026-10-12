@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "Terms of Trade",
   description:
     "Commercial terms governing quotations, orders, payment, quality inspection, and shipment for Crossway Global export transactions.",
+  alternates: { canonical: "/terms" },
 };
 
 export default function TermsPage() {

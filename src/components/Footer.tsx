@@ -58,6 +58,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link className="hover:text-white transition-colors" href="/insights">
+                  Buyer Insights
+                </Link>
+              </li>
+              <li>
                 <Link className="hover:text-white transition-colors" href="/about">
                   About Crossway Global
                 </Link>

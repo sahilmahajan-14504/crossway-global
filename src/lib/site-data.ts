@@ -1,6 +1,7 @@
 export const siteConfig = {
   name: "Crossway Global",
   tagline: "Agricultural Exports | India",
+  url: "https://www.crosswayglobal.co.in",
   email: "Sahilmahajan14504@gmail.com",
   phone: "+91 73919 97155",
   hours: "9 AM – 7 PM",
@@ -12,6 +13,7 @@ export const navLinks = [
   { href: "/", label: "Home" },
   { href: "/products", label: "Products" },
   { href: "/quality", label: "Quality & Compliance" },
+  { href: "/insights", label: "Insights" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
 ];

@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "Privacy Notice",
   description:
     "How Crossway Global collects, uses, and protects information submitted through our website and quotation requests.",
+  alternates: { canonical: "/privacy" },
 };
 
 export default function PrivacyPage() {

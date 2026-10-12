@@ -1,17 +1,27 @@
 import type { Metadata } from "next";
 import RfqForm from "@/components/RfqForm";
+import JsonLd from "@/components/JsonLd";
 import { siteConfig } from "@/lib/site-data";
+import { breadcrumbJsonLd } from "@/lib/breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Contact & Request a Quote",
   description:
-    "Request a commercial export quotation for turmeric or moringa, or reach the Crossway Global trade desk directly.",
+    "Request a commercial quotation for turmeric, moringa, ashwagandha, or beetroot powder, or reach the Crossway Global trade desk directly.",
+  alternates: { canonical: "/contact" },
 };
+
+const breadcrumbs = breadcrumbJsonLd([
+  { name: "Home", path: "/" },
+  { name: "Contact", path: "/contact" },
+]);
 
 export default function ContactPage() {
   return (
-    <section className="py-20 md:py-28 border-b border-brand-border bg-white">
-      <div className="max-w-site mx-auto px-6">
+    <>
+      <JsonLd data={breadcrumbs} />
+      <section className="py-20 md:py-28 border-b border-brand-border bg-white">
+        <div className="max-w-site mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
           <div className="lg:col-span-5 flex flex-col justify-between">
             <div>
@@ -80,7 +90,8 @@ export default function ContactPage() {
             <RfqForm />
           </div>
         </div>
-      </div>
-    </section>
+        </div>
+      </section>
+    </>
   );
 }
