@@ -3,6 +3,7 @@ import ProductsOverview from "@/components/home/ProductsOverview";
 import SpecTables from "@/components/products/SpecTables";
 import RfqBand from "@/components/home/RfqBand";
 import JsonLd from "@/components/JsonLd";
+import TurmericVarieties from "@/components/products/TurmericVarieties";
 import { products, siteConfig } from "@/lib/site-data";
 import { breadcrumbJsonLd } from "@/lib/breadcrumbs";
 
@@ -58,6 +59,7 @@ export default function ProductsPage() {
         </div>
       </section>
       <ProductsOverview />
+      <TurmericVarieties />
       <SpecTables />
       <RfqBand />
     </>
